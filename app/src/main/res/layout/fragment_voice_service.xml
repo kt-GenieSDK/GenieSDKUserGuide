@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/getVoiceTextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="getVoiceText - 음성 인식 시작"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/stopVoiceRecognitionButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stopVoiceRecognitionButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="stopVoiceRecognition - 인식 종료"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toRightOf="@+id/getVoiceTextButton"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/showConfirmDialogWithTTSButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="showConfirmDialog - with TTS"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/showConfirmDialogWithoutTTSButton"
+            app:layout_constraintTop_toBottomOf="@+id/stopVoiceRecognitionButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/showConfirmDialogWithoutTTSButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="showConfirmDialog - without TTS"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toRightOf="@+id/showConfirmDialogWithTTSButton"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stopVoiceRecognitionButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/setVoiceFilterButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="setVoiceFilter - VoiceFilter 설정"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/resetVoiceFilterButton"
+            app:layout_constraintTop_toBottomOf="@+id/showConfirmDialogWithTTSButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/resetVoiceFilterButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="resetVoiceFilter - VoiceFilter 해제"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toRightOf="@+id/setVoiceFilterButton"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/showConfirmDialogWithTTSButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<actions>
+    <action intentName="B-StartApp">
+        <fulfillment urlTemplate="geniesdk://sample/B-StartApp">
+        </fulfillment>
+    </action>
+    <action intentName="ShowMainMenu">
+        <fulfillment urlTemplate="geniesdk://sample/ShowMainMenu">
+        </fulfillment>
+    </action>
+    <action intentName="ShowPayment">
+        <fulfillment urlTemplate="geniesdk://sample/ShowPayment">
+        </fulfillment>
+    </action>
+    <action intentName="ShowAppinfo">
+        <fulfillment urlTemplate="geniesdk://sample/ShowAppinfo">
+        </fulfillment>
+    </action>
+    <action intentName="SearchIntent">
+        <fulfillment urlTemplate="geniesdk://sample/SearchIntent">
+        </fulfillment>
+    </action>
+
+
+<!--    <action intentName="DETAIL">-->
+<!--        <fulfillment urlTemplate="yourcustomscheme://yourcustomhostsecond/detail{?title}">-->
+<!--            <parameter-mapping-->
+<!--                intentParameter="NE-TITLE"-->
+<!--                urlParameter="title" />-->
+<!--        </fulfillment>-->
+<!--    </action>-->
+</actions>

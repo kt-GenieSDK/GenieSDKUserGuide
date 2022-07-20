@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/allValuesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="전체 값 출력"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/userNicknameButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="userNickname"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/allValuesButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/isPinButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="isPin"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userNicknameButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/kwsIdButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="kwsId"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@+id/isPinButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/regSpeaker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="regSpeaker"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@+id/kwsIdButton" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/isRegistWithApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="isRegistWithApp"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@+id/regSpeaker" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/telAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="telAvailable"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@+id/isRegistWithApp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/otvAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="otvAvailable"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@+id/telAvailable" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

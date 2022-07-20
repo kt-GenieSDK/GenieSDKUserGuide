@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kt.gigagenie.geniesdksample">
+
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:banner="@drawable/ic_sample_banner"
+        android:icon="@drawable/ic_sample"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_sample_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GenieSDKSample">
+        <activity
+            android:name=".features.main.MainActivity"
+            android:exported="true"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:scheme="geniesdk"
+                    android:host="sample" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.kt.gigagenie.genieinfo"
+            android:resource="@xml/genieinfo" />
+        <meta-data
+            android:name="com.kt.gigagenie.actions"
+            android:resource="@xml/actions" />
+    </application>
+
+</manifest>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">지니 샘플</string>
+    <string-array name="function_array">
+        <item>AppInfoService</item>
+        <item>VoiceService</item>
+        <item>TTSService</item>
+        <item>PaymentService</item>
+        <item>MediaService</item>
+    </string-array>
+</resources>
