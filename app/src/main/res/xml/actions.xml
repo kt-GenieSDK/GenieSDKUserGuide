@@ -5,16 +5,24 @@
         <fulfillment urlTemplate="geniesdk://sample/B-StartApp">
         </fulfillment>
     </action>
-    <action intentName="ShowMainMenu">
-        <fulfillment urlTemplate="geniesdk://sample/ShowMainMenu">
+    <action intentName="ShowAppinfo">
+        <fulfillment urlTemplate="geniesdk://sample/ShowAppinfo">
+        </fulfillment>
+    </action>
+    <action intentName="ShowVoice">
+        <fulfillment urlTemplate="geniesdk://sample/ShowVoice">
+        </fulfillment>
+    </action>
+    <action intentName="ShowTTS">
+        <fulfillment urlTemplate="geniesdk://sample/ShowTTS">
         </fulfillment>
     </action>
     <action intentName="ShowPayment">
         <fulfillment urlTemplate="geniesdk://sample/ShowPayment">
         </fulfillment>
     </action>
-    <action intentName="ShowAppinfo">
-        <fulfillment urlTemplate="geniesdk://sample/ShowAppinfo">
+    <action intentName="ShowMedia">
+        <fulfillment urlTemplate="geniesdk://sample/ShowMedia">
         </fulfillment>
     </action>
     <action intentName="SearchIntent">
@@ -23,11 +31,11 @@
     </action>
 
 
-<!--    <action intentName="DETAIL">-->
-<!--        <fulfillment urlTemplate="yourcustomscheme://yourcustomhostsecond/detail{?title}">-->
-<!--            <parameter-mapping-->
-<!--                intentParameter="NE-TITLE"-->
-<!--                urlParameter="title" />-->
-<!--        </fulfillment>-->
-<!--    </action>-->
+    <!--    <action intentName="DETAIL">-->
+    <!--        <fulfillment urlTemplate="yourcustomscheme://yourcustomhostsecond/detail{?title}">-->
+    <!--            <parameter-mapping-->
+    <!--                intentParameter="NE-TITLE"-->
+    <!--                urlParameter="title" />-->
+    <!--        </fulfillment>-->
+    <!--    </action>-->
 </actions>

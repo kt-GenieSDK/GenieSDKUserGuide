@@ -62,11 +62,11 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                 binding.spinner.setSelection(0)
             }
             "/ShowVoice" -> {
-                // AppInfoService
+                // ShowVoice
                 binding.spinner.setSelection(1)
             }
             "/ShowTTS" -> {
-                // AppInfoService
+                // ShowTTS
                 binding.spinner.setSelection(2)
             }
             "/ShowPayment" -> {
@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                 binding.spinner.setSelection(3)
             }
             "/ShowMedia" -> {
-                // PaymentService
+                // ShowMedia
                 binding.spinner.setSelection(4)
             }
             "/SearchIntent" -> {
